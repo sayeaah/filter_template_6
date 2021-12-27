@@ -3,3 +3,5 @@ package-lock.json
 
 #vscode generated folders
 .vscode
+
+node_modules/
