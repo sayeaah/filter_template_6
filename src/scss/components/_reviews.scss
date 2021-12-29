@@ -1,23 +1,75 @@
 .review {
-  @media screen and (max-width: 767px) {
-    padding: 8vw;
+  background: url(/dist/image/review_bg.svg);
+  background-size: cover;
+  padding: 25px 0;
+
+  @media screen and (max-width: 600px) {
+    padding: 4.2vw;
+  }
+
+  &__list {
+    margin: 13px auto 0;
+    max-width: 550px;
+
+    @media screen and (max-width: 600px) {
+      max-width: 91.6vw;
+      margin-top: 2.2vw;
+    }
   }
 
   &__item {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-end;
-    margin-bottom: 35px;
-    max-width: 75%;
+    justify-content: flex-start;
+    max-width: 400px;
+    margin: 0 0 35px auto;
+
+    @media screen and (max-width: 600px) {
+      max-width: 66.6vw;
+      margin-bottom: 5.8vw;
+    }
 
     &--reverse {
       flex-direction: row-reverse;
-      margin: 0 0 0 auto;
+      margin: 0 0 35px;
+
+      @media screen and (max-width: 600px) {
+        margin-bottom: 5.8vw;
+      }
     }
 
-    @media screen and (max-width: 767px) {
-      max-width: 100%;
-      justify-content: flex-end;
+    &:nth-child(2) {
+      .review__image-wrapper {
+        box-shadow: -170px 17px 13px rgba($color: $white, $alpha: 0.47);
+
+        @media screen and (max-width: 600px) {
+          box-shadow: -28vw 2.8vw 2.2vw rgba($color: $white, $alpha: 0.47);
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .review__image-wrapper {
+        box-shadow: 175px -30px 13px rgba($color: $white, $alpha: 0.47);
+
+        @media screen and (max-width: 600px) {
+          box-shadow: 29vw -5vw 2.2vw rgba($color: $white, $alpha: 0.47);
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      .review__image-wrapper {
+        box-shadow: -170px -17px 13px rgba($color: $white, $alpha: 0.47);
+
+        @media screen and (max-width: 600px) {
+          box-shadow: -28vw -2.8vw 2.2vw rgba($color: $white, $alpha: 0.47);
+        }
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 
@@ -26,6 +78,13 @@
     height: 183px;
     overflow: hidden;
     border-radius: 50%;
+    box-shadow: 170px 17px 13px rgba($color: $white, $alpha: 0.47);
+
+    @media screen and (max-width: 600px) {
+      width: 30.5vw;
+      height: 30.5vw;
+      box-shadow: 28vw 2.8vw 2.2vw rgba($color: $white, $alpha: 0.47);
+    }
 
     img {
       width: 100%;
@@ -41,12 +100,23 @@
     font-weight: 600;
     margin: 0 20px 0 15px;
 
+    @media screen and (max-width: 600px) {
+      font-size: 3vw;
+      margin: 0 3.3vw 0 2.5vw;
+    }
+
     &--md {
       font-size: 2.6rem;
+      @media screen and (max-width: 600px) {
+        font-size: 4.3vw;
+      }
     }
 
     &--lg {
       font-size: 3.6rem;
+      @media screen and (max-width: 600px) {
+        font-size: 6vw;
+      }
     }
   }
 }

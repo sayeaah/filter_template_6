@@ -1,0 +1,50 @@
+.sns {
+  background-image: url(/dist/image/sns_bg.svg);
+  text-align: center;
+  padding: 30px 0 40px;
+  overflow: hidden;
+
+  @media screen and (max-width: 600px) {
+    padding: 5vw 0 6.6vw;
+  }
+
+  &__list {
+    padding-left: 3%;
+  }
+
+  &__item {
+    width: 50%;
+    transform: rotate(-5deg);
+    text-align: right;
+    margin-top: -118px;
+
+    @media screen and (max-width: 600px) {
+      margin-top: -19.3vw;
+    }
+
+    &--reverse {
+      margin: -118px 15px 0 auto;
+      transform: rotate(5deg);
+      text-align: left;
+
+      @media screen and (max-width: 600px) {
+        margin: -19.3vw 2.5vw 0 auto;
+      }
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    img {
+      width: 100%;
+      max-width: 245px;
+      height: auto;
+      object-fit: contain;
+
+      @media screen and (max-width: 600px) {
+        max-width: 40.8vw;
+      }
+    }
+  }
+}

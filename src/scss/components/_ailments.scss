@@ -1,0 +1,74 @@
+.ailments {
+  width: 100%;
+  background: url(/dist/image/ailments_bg.svg) no-repeat;
+  padding: 15px 0;
+  background-size: cover;
+  background-position: bottom left;
+
+  @media screen and (max-width: 600px) {
+    padding: 2.5vw 0;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 136px 50px) 136px;
+    justify-content: center;
+    gap: 20px 0;
+    padding: 15px 45px 0;
+    width: 100%;
+    place-items: center;
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: repeat(2, 22.6vw 8.3vw) 22.6vw;
+      gap: 3.3vw 0;
+      padding: 2.5vw 7.5vw 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &:nth-child(2) {
+      grid-column: 3;
+    }
+
+    &:nth-child(3) {
+      grid-column: 5;
+    }
+
+    &:nth-child(4) {
+      grid-column: 2;
+    }
+
+    &:nth-child(5) {
+      grid-column: 4;
+    }
+  }
+
+  &__image-wrapper {
+    background-color: $white;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 135px;
+    height: 135px;
+
+    @media screen and (max-width: 600px) {
+      width: 22.5vw;
+      height: 22.5vw;
+    }
+  }
+
+  &__text {
+    font-weight: bold;
+    font-size: $font-20;
+    margin-top: 15px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 3.3vw;
+      margin-top: 2.5vw;
+    }
+  }
+}

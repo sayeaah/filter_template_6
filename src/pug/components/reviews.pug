@@ -1,0 +1,26 @@
+mixin item(image)
+  li.review__item&attributes(attributes)= name
+    .review__image-wrapper
+      img(src= image alt="customer review")
+    .review__wrapper
+      p.review__text ◯◯感想が入ります。
+        br
+        | 感想が
+        span.review__text.review__text--md 入ります。
+        br
+        | ◯◯感想が入ります。
+        br
+        span.review__text.review__text--lg 感想
+        | が入ります。
+
+
+section.review
+  .max-width
+    .heading.ryumin 
+      h2.heading__text お客様の声
+    ul.review__list
+      +item("dist/image/customer_1.svg")
+      +item("dist/image/customer_2.svg")(class="review__item--reverse")
+      +item("dist/image/customer_3.svg")
+      +item("dist/image/customer_4.svg")(class="review__item--reverse")
+      +item("dist/image/customer_5.svg")

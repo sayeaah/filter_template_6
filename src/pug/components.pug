@@ -7,15 +7,16 @@ html(lang="en")
     link(rel="stylesheet", href="dist/css/style.css")
     title Components
   body 
-    header.header.wrapper
-      h1.header__text ●ビタミン系サプリメント　ターゲット：60代以上女性
+    include components/header.pug
 
     main
-      .mb-20.wrapper
+      include components/banner.pug
+
+      .mb-20.max-width
         .heading.ryumin 
           h2.heading__text こんなお悩み抱えていませんか？
 
-      .mb-20.wrapper
+      .mb-20.max-width
         .heading.ryumin
           h2.heading__text.heading__text--sm こんなに違います！
             br

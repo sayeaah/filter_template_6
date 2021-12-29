@@ -1,0 +1,115 @@
+.products {
+  background: url(/dist/image/top_flowers.svg) repeat no-repeat, url(/dist/image/bottom_left.svg) no-repeat, url(/dist/image/bottom_right.svg) no-repeat;
+  background-position: top -15px left, bottom left -10px, bottom right -10px;
+  padding: 25px 0;
+
+  @media screen and (max-width: 600px) {
+    padding: 4.2vw 0;
+  }
+
+  &__item {
+    position: relative;
+    padding: 20px 20px 20px 50px;
+    max-width: 455px;
+    margin-top: 25px;
+    background-image: url(/dist/image/pink_bg_light.svg);
+
+    @media screen and (max-width: 600px) {
+      padding: 3.3vw 3.3vw 3.3vw 8.3vw;
+      max-width: 80vw;
+      margin-top: 4.2vw;
+    }
+
+    &--dark-pink {
+      background-image: url(/dist/image/pink_bg.svg);
+    }
+  
+    &--right {
+      margin: 25px 0 0 auto;
+
+      @media screen and (max-width: 600px) {
+        margin-top: 4.2vw;
+      }
+    }
+  }
+
+  &__point {
+    position: absolute;
+    top: -10px;
+    left: 50px;
+    font-family: $clicker;
+    font-size: 1.7rem;
+    line-height: 1.2rem;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: url(/dist/image/point-bg.svg) no-repeat;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+    color: $black;
+
+    @media screen and (max-width: 600px) {
+      top: -1.7vw;
+      left: 8.3vw;
+      width: 9vw;
+      height: 9vw;
+      padding-top: 2.2vw;
+      font-size: 3vw;
+      line-height: 2.2vw;
+    }
+  }
+
+  &__title {
+    padding: 0 0 15px 55px;
+    font-size: 1.3rem;
+
+    @media screen and (max-width: 600px) {
+      padding: 0 0 2.5vw 9.2vw;
+      font-size: 2.5vw;
+    }
+  }
+
+  &__description-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__description {
+    text-align: justify;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.8vw;
+    }
+  }
+
+  &__image-wrapper {
+    background-color: $white;
+    border: 0.28px solid $black;
+    width: 95px;
+    min-width: 95px;
+    height: 115px;
+    margin-left: 15px;
+    overflow: hidden;
+
+    @media screen and (max-width: 600px) {
+      width: 15.8vw;
+      min-width: 15.8vw;
+      height: 19.2vw;
+      margin-left: 2.5vw;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

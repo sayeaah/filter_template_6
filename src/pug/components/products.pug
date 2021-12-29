@@ -1,0 +1,22 @@
+mixin item()
+  li.products__item&attributes(attributes)= name
+    span.products__point Point
+      br 
+      | 1
+    h3.products__title.ryumin 見出しが入ります。見出しが入ります◯◯◯◯◯。
+    .products__description-wrapper
+      p.products__description これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。
+      .products__image-wrapper
+
+section.products
+  .max-width
+    .heading.ryumin
+      h2.heading__text.heading__text--sm こんなに違います！
+        br
+        | 願いを叶えるefsマルチビタミン。
+    ul.products__list
+      +item()
+      +item()(class="products__item--dark-pink products__item--right")
+      +item()
+      +item()(class="products__item--dark-pink products__item--right")
+      +item()
