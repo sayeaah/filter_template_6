@@ -4,7 +4,70 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(http-equiv="X-UA-Compatible", content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet", href="dist/sass/style.css")
+    link(rel="stylesheet", href="dist/css/style.css")
     title Components
   body 
-    h1.heading Components
+    header.header.wrapper
+      h1.header__text ●ビタミン系サプリメント　ターゲット：60代以上女性
+
+    main
+      .mb-20.wrapper
+        .heading.ryumin 
+          h2.heading__text こんなお悩み抱えていませんか？
+
+      .mb-20.wrapper
+        .heading.ryumin
+          h2.heading__text.heading__text--sm こんなに違います！
+            br
+            | 願いを叶えるefsマルチビタミン。
+
+      .mb-20
+        .card.card--pink
+          span.card__point Point
+            br 
+            | 1
+          h3.card__title.ryumin 見出しが入ります。見出しが入ります○○○○○。
+          .card__description-wrapper
+            p.card__description これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。
+            .card__image-wrapper
+
+      .mb-20
+        .card.card--pink.card--right
+          span.card__point Point
+            br 
+            | 1
+          h3.card__title.ryumin 見出しが入ります。見出しが入ります○○○○○。
+          .card__description-wrapper
+            p.card__description これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。これはコピーです○○○○○○○。
+            .card__image-wrapper
+
+      .mb-20
+        .review
+          ul.review__list
+            li.review__item
+              .review__image-wrapper
+                img(src="dist/image/customer_1.svg" alt="customer review")
+              .review__wrapper
+                p.review__text ◯◯感想が入ります。
+                  br
+                  | 感想が
+                  span.review__text.review__text--md 入ります。
+                  br
+                  | ◯◯感想が入ります。
+                  br
+                  span.review__text.review__text--lg 感想
+                  | が入ります。
+
+            li.review__item.review__item--reverse
+              .review__image-wrapper
+                img(src="dist/image/customer_2.svg" alt="customer review")
+              .review__wrapper
+                p.review__text ◯◯感想が入ります。
+                  br
+                  | 感想が
+                  span.review__text.review__text--md 入ります。
+                  br
+                  | ◯◯感想が入ります。
+                  br
+                  span.review__text.review__text--lg 感想
+                  | が入ります。

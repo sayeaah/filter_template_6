@@ -1,0 +1,24 @@
+.header {
+  background-color: $white;
+  height: 90px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media screen and (max-width: 600px) {
+    padding: 0 8.3vw;
+    height: 15vw;
+  }
+
+  &__text {
+    font-family: $kg-regular;
+    font-size: $font-20;
+    font-weight: 400;
+    margin: 0;
+
+    @media screen and (max-width: 600px) {
+      font-size: 3.3vw;
+    }
+  }
+}

@@ -1,5 +1,30 @@
 .heading {
   text-align: center;
-  color: $dark-gray;
-  font-size: $font-30;
+  background: url(/dist/image/gold-banner.svg) no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    margin-top: -30px;
+    font-size: 2.4rem;
+
+    @media screen and (max-width: 600px) {
+      margin-top: -5vw;
+      font-size: 4vw;
+    }
+
+    &--sm {
+      margin-top: -38px;
+      font-size: $font-20;
+
+      @media screen and (max-width: 600px) {
+        margin-top: -6.3vw;
+        font-size: 3.3vw;
+      }
+    }
+  }
 }

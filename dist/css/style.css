@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "KozGoPR6NRegular";
+  src: url("/dist/fonts/KozGoPr6N-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "ClickerScript";
+  src: url("/dist/fonts/ClickerScript-Regular.ttf");
+}
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS and IE text size adjust after device orientation change,
@@ -415,6 +423,189 @@ a {
 
 .heading {
   text-align: center;
-  color: #333;
-  font-size: 3rem;
+  background: url(/dist/image/gold-banner.svg) no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading__text {
+  margin-top: -30px;
+  font-size: 2.4rem;
+}
+@media screen and (max-width: 600px) {
+  .heading__text {
+    margin-top: -5vw;
+    font-size: 4vw;
+  }
+}
+.heading__text--sm {
+  margin-top: -38px;
+  font-size: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .heading__text--sm {
+    margin-top: -6.3vw;
+    font-size: 3.3vw;
+  }
+}
+
+.header {
+  background-color: #fff;
+  height: 90px;
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 0 8.3vw;
+    height: 15vw;
+  }
+}
+.header__text {
+  font-family: "KozGoPR6NRegular", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+@media screen and (max-width: 600px) {
+  .header__text {
+    font-size: 3.3vw;
+  }
+}
+
+.card--pink {
+  background-color: pink;
+  position: relative;
+  padding: 20px 20px 20px 50px;
+  max-width: 60em;
+}
+@media screen and (max-width: 767px) {
+  .card--pink {
+    max-width: 75vw;
+  }
+}
+.card--right {
+  margin: 0 0 0 auto;
+}
+.card__point {
+  position: absolute;
+  top: -10px;
+  left: 50px;
+  font-family: "ClickerScript", sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.2rem;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  background: url(/dist/image/point-bg.svg) no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 12px;
+  color: #000;
+}
+.card__title {
+  padding: 0 0 15px 55px;
+  font-size: 1.3rem;
+}
+.card__description-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card__description {
+  font-size: 1.1rem;
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+}
+@media screen and (max-width: 767px) {
+  .card__description {
+    font-size: 1rem;
+  }
+}
+.card__image-wrapper {
+  background-color: #fff;
+  border: 0.28px solid #000;
+  width: 115px;
+  min-width: 115px;
+  height: 135px;
+  margin-left: 15px;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .card__image-wrapper {
+    width: 100px;
+    min-width: 100px;
+    height: 115px;
+  }
+}
+.card__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 767px) {
+  .review {
+    padding: 8vw;
+  }
+}
+.review__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin-bottom: 35px;
+  max-width: 75%;
+}
+.review__item--reverse {
+  flex-direction: row-reverse;
+  margin: 0 0 0 auto;
+}
+@media screen and (max-width: 767px) {
+  .review__item {
+    max-width: 100%;
+    justify-content: flex-end;
+  }
+}
+.review__image-wrapper {
+  width: 183px;
+  height: 183px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.review__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.review__text {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 20px 0 15px;
+}
+.review__text--md {
+  font-size: 2.6rem;
+}
+.review__text--lg {
+  font-size: 3.6rem;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
 }
