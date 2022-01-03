@@ -1,6 +1,6 @@
 .ailments {
   width: 100%;
-  background: url(/dist/image/ailments_bg.svg) no-repeat;
+  background: url(/assets/image/ailments_bg.svg) no-repeat;
   padding: 15px 0;
   background-size: cover;
   background-position: bottom left;
@@ -65,6 +65,7 @@
     font-weight: bold;
     font-size: $font-20;
     margin-top: 15px;
+    font-family: $ryumin;
 
     @media screen and (max-width: 600px) {
       font-size: 3.3vw;

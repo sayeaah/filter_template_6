@@ -1,6 +1,5 @@
 .review {
-  background: url(/dist/image/review_bg.svg);
-  background-size: cover;
+  background: url(/assets/image/review_bg.svg);
   padding: 25px 0;
 
   @media screen and (max-width: 600px) {
@@ -97,8 +96,9 @@
     writing-mode: vertical-lr;
     text-orientation: upright;
     font-size: 1.8rem;
-    font-weight: 600;
+    font-weight: 900;
     margin: 0 20px 0 15px;
+    font-family: $ryumin;
 
     @media screen and (max-width: 600px) {
       font-size: 3vw;

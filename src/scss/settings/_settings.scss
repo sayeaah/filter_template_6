@@ -10,20 +10,44 @@ $black: #000;
 //font face
 @font-face {
   font-family: "KozGoPR6NRegular";
-  src: url("/dist/fonts/KozGoPr6N-Regular.otf") format("otf");
+  src: url("/assets/fonts/KozGoPr6N-Regular.otf");
 }
 
 @font-face {
   font-family: "ClickerScript";
-  src: url("/dist/fonts/ClickerScript-Regular.ttf");
+  src: url("/assets/fonts/ClickerScript-Regular.ttf");
 }
 
 @font-face {
   font-family: "KozGoPR6NBold";
-  src: url("/dist/fonts/KozGoPr6N-Bold.otf") format("otf");
+  src: url("/assets/fonts/KozGoPr6N-Bold.otf");
+}
+
+@font-face {
+  font-family: "KozGoPr6N-Heavy";
+  src: url("/assets/fonts/KozGoPr6N-Heavy.otf");
+}
+
+@font-face {
+  font-family: "A-OTFJunPro501";
+  src: url("/assets/fonts/A-OTFJunPro501.otf");
+}
+
+@font-face {
+  font-family: "A-OTFRyuminProH-KL";
+  src: url("/assets/fonts/A-OTFRyuminProH-KL.otf");
+}
+
+@font-face {
+  font-family: "A-OTFJunPro34";
+  src: url("/assets/fonts/A-OTFJunPro34.otf");
 }
 
 //fonts
-$kg-regular: 'KozGoPR6NRegular', Arial, sans-serif;
+$kg-regular: 'KozGoPR6NRegular', sans-serif;
 $clicker: 'ClickerScript', sans-serif;
-$kg-bold: 'KozGoPR6NBold', Arial, sans-serif;
+$kg-bold: 'KozGoPR6NBold', sans-serif;
+$ryumin: 'A-OTFRyuminProH-KL', serif;
+$kg-heavy: 'KozGoPr6N-Heavy', sans-serif;
+$jun501: 'A-OTFJunPro501', cursive, sans-serif;
+$jun34: 'A-OTFJunPro34', sans-serif;

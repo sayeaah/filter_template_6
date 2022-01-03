@@ -1,9 +1,38 @@
 
 .max-width {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
 }
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.blank-container {
+  height: 400px;
+
+  @media screen and (max-width: 600px) {
+    height: 330px;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.red {
+  color: #ff0001;
 }

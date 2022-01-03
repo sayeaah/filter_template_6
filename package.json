@@ -2,7 +2,7 @@
   "name": "sample",
   "version": "1.0.0",
   "scripts": {
-    "compileSass": "sass --watch src/scss:dist/css --no-source-map",
+    "compileSass": "sass --watch src/scss:assets/css --no-source-map",
     "compilePug": "pug -w src/pug -o ./ -P",
     "start": "npm-run-all --parallel compileSass compilePug"
   },

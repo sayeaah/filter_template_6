@@ -1,0 +1,23 @@
+.video {
+  background: url(/assets/image/top_flowers.svg) repeat no-repeat, url(/assets/image/bottom_left.svg) no-repeat, url(/assets/image/bottom_right.svg) no-repeat;
+  background-position: top -15px left, bottom left -10px, bottom right -10px;
+  background-size: auto, 145px, 145px;
+  padding: 25px 0;
+
+  @media screen and (max-width: 600px) {
+    padding: 4.2vw 0;
+    background-size: auto, 33vw, 33vw;
+  }
+
+  &__text {
+    color: #af0252;
+    font-size: $font-20;
+    font-family: $ryumin;
+    text-align: center;
+    font-weight: bold;
+
+    @media screen and (max-width: 600px) {
+      font-size: 3.5vw;
+    }
+  }
+}

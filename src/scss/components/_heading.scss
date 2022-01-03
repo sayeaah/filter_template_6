@@ -1,6 +1,6 @@
 .heading {
   text-align: center;
-  background: url(/dist/image/gold-banner.svg) no-repeat;
+  background: url(/assets/image/gold-banner.svg) no-repeat;
   background-position: center;
   background-size: contain;
   height: 115px;
@@ -13,20 +13,22 @@
   }
 
   &__text {
-    margin-top: -30px;
+    margin-top: -38px;
     font-size: 2.4rem;
+    font-family: $ryumin;
+    font-weight: 900;
 
     @media screen and (max-width: 600px) {
-      margin-top: -5vw;
+      margin-top: -6.3vw;
       font-size: 4vw;
     }
 
     &--sm {
-      margin-top: -38px;
+      margin-top: -45px;
       font-size: $font-20;
 
       @media screen and (max-width: 600px) {
-        margin-top: -6.3vw;
+        margin-top: -7.5vw;
         font-size: 3.3vw;
       }
     }
