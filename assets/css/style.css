@@ -1,30 +1,30 @@
 @font-face {
   font-family: "KozGoPR6NRegular";
-  src: url("/assets/fonts/KozGoPr6N-Regular.otf");
+  src: url("../fonts/KozGoPr6N-Regular.otf");
 }
 @font-face {
   font-family: "ClickerScript";
-  src: url("/assets/fonts/ClickerScript-Regular.ttf");
+  src: url("../fonts/ClickerScript-Regular.ttf");
 }
 @font-face {
   font-family: "KozGoPR6NBold";
-  src: url("/assets/fonts/KozGoPr6N-Bold.otf");
+  src: url("../fonts/KozGoPr6N-Bold.otf");
 }
 @font-face {
   font-family: "KozGoPr6N-Heavy";
-  src: url("/assets/fonts/KozGoPr6N-Heavy.otf");
+  src: url("../fonts/KozGoPr6N-Heavy.otf");
 }
 @font-face {
   font-family: "A-OTFJunPro501";
-  src: url("/assets/fonts/A-OTFJunPro501.otf");
+  src: url("../fonts/A-OTFJunPro501.otf");
 }
 @font-face {
   font-family: "A-OTFRyuminProH-KL";
-  src: url("/assets/fonts/A-OTFRyuminProH-KL.otf");
+  src: url("../fonts/A-OTFRyuminProH-KL.otf");
 }
 @font-face {
   font-family: "A-OTFJunPro34";
-  src: url("/assets/fonts/A-OTFJunPro34.otf");
+  src: url("../fonts/A-OTFJunPro34.otf");
 }
 /**
  * 1. Set default font family to sans-serif.
@@ -425,6 +425,7 @@ th {
   padding: 0;
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
+  line-height: 1.5em;
 }
 
 html {
@@ -443,7 +444,7 @@ a {
 
 .heading {
   text-align: center;
-  background: url(/assets/image/gold-banner.svg) no-repeat;
+  background: url(../image/gold-banner.svg) no-repeat;
   background-position: center;
   background-size: contain;
   height: 115px;
@@ -501,7 +502,7 @@ a {
 }
 @media screen and (max-width: 600px) {
   .header__text {
-    font-size: 3.3vw;
+    font-size: 3.1vw;
   }
 }
 
@@ -511,8 +512,66 @@ a {
   box-shadow: 6px 6px 10px rgba(77, 77, 77, 0.65);
   overflow: hidden;
 }
+@media screen and (max-width: 600px) {
+  .card {
+    border-radius: 3.8vw;
+    box-shadow: 1vw 1vw 1.6vw rgba(77, 77, 77, 0.65);
+  }
+}
 .card--with-title {
   border-radius: 0 23px 0 23px;
+}
+@media screen and (max-width: 600px) {
+  .card--with-title {
+    border-radius: 0 3.8vw 0 3.8vw;
+  }
+}
+.card--with-title .card__product-name {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-family: "A-OTFJunPro501", cursive, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .card--with-title .card__product-name {
+    font-size: 4vw;
+    line-height: 5.8vw;
+  }
+}
+.card--with-title .card__price {
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+@media screen and (max-width: 600px) {
+  .card--with-title .card__price {
+    font-size: 5.8vw;
+    line-height: 6.6vw;
+  }
+}
+.card--with-title .card__price--lg {
+  font-size: 3.9rem;
+}
+@media screen and (max-width: 600px) {
+  .card--with-title .card__price--lg {
+    font-size: 6.5vw;
+  }
+}
+.card--with-title .card__yen {
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+}
+@media screen and (max-width: 600px) {
+  .card--with-title .card__yen {
+    font-size: 4.3vw;
+    line-height: 4.3vw;
+  }
+}
+.card--with-title .card__text-content {
+  margin-left: 10px;
+}
+@media screen and (max-width: 600px) {
+  .card--with-title .card__text-content {
+    margin-left: 1.7vw;
+  }
 }
 .card__title {
   display: flex;
@@ -520,30 +579,80 @@ a {
   justify-content: center;
   width: 100%;
   height: 52px;
-  background: url(/assets/image/red_bg.svg);
+  background: url(../image/red_bg.svg);
   color: #fff;
   font-family: "KozGoPr6N-Heavy", sans-serif;
   font-size: 2.5rem;
+}
+@media screen and (max-width: 600px) {
+  .card__title {
+    height: 8.7vw;
+    font-size: 4.2vw;
+  }
 }
 .card__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 15px 15px;
+  padding: 5px 15px 15px 0;
+}
+@media screen and (max-width: 600px) {
+  .card__content {
+    padding: 0.8vw 2.5vw 2.5vw 0;
+  }
+}
+.card__content--with-padding-left {
+  padding-left: 15px;
+}
+@media screen and (max-width: 600px) {
+  .card__content--with-padding-left {
+    padding-left: 2.5vw;
+  }
+}
+.card__content--with-padding-left .board__circle-image {
+  left: 0;
+}
+.card__content--with-padding-left .card__dosage {
+  right: 8px;
+}
+@media screen and (max-width: 600px) {
+  .card__content--with-padding-left .card__dosage {
+    right: 1.3vw;
+  }
 }
 .card__image-content {
   min-width: 125px;
   width: 125px;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .card__image-content {
+    min-width: 20.8vw;
+    width: 20.8vw;
+  }
 }
 .card__product-name {
-  font-size: 2.4rem;
-  line-height: 3.5rem;
-  font-family: "A-OTFJunPro501", cursive, sans-serif;
+  white-space: nowrap;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  font-family: "A-OTFJunPro34", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .card__product-name {
+    font-size: 3.6vw;
+    line-height: 5vw;
+  }
 }
 .card__product-description {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-family: "A-OTFJunPro34", sans-serif;
-  margin-bottom: 4px;
+  margin: 4px 0;
+}
+@media screen and (max-width: 600px) {
+  .card__product-description {
+    font-size: 1.9vw;
+    margin: 0.7vw 0;
+  }
 }
 .card__free-shipping {
   display: flex;
@@ -554,10 +663,17 @@ a {
   font-weight: bold;
   white-space: nowrap;
   background-color: #ff0001;
-  font-size: 2.2rem;
-  padding: 0 20px;
+  font-size: 2.5rem;
+  padding: 5px 20px;
   border-radius: 50%;
-  margin-left: 20px;
+  margin-left: 10px;
+}
+@media screen and (max-width: 600px) {
+  .card__free-shipping {
+    font-size: 4.2vw;
+    padding: 0.5vw 3.3vw;
+    margin-left: 1.7vw;
+  }
 }
 .card__regular-price {
   font-family: "KozGoPR6NBold", sans-serif;
@@ -566,11 +682,33 @@ a {
   margin-right: 5px;
   white-space: nowrap;
 }
+@media screen and (max-width: 600px) {
+  .card__regular-price {
+    font-size: 2.5vw;
+    margin-right: 0.8vw;
+  }
+}
 .card__price {
-  font-size: 3.5rem;
-  line-height: 4rem;
+  font-size: 4.4rem;
+  line-height: 4.5rem;
   font-family: "KozGoPR6NBold", sans-serif;
   white-space: nowrap;
+}
+@media screen and (max-width: 600px) {
+  .card__price {
+    font-size: 7.3vw;
+    line-height: 7.5vw;
+  }
+}
+.card__price--lg {
+  font-size: 4.6rem;
+  margin-left: 5px;
+}
+@media screen and (max-width: 600px) {
+  .card__price--lg {
+    font-size: 7.7vw;
+    margin-left: 0.8vw;
+  }
 }
 .card__tax-label {
   white-space: nowrap;
@@ -578,14 +716,48 @@ a {
   line-height: 0.9rem;
   font-family: "KozGoPR6NBold", sans-serif;
 }
+@media screen and (max-width: 600px) {
+  .card__tax-label {
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+  }
+}
 .card__yen {
-  font-size: 2.6rem;
-  line-height: 2.6rem;
+  font-size: 3rem;
+  line-height: 3rem;
   font-family: "KozGoPR6NBold", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .card__yen {
+    font-size: 5vw;
+    line-height: 5vw;
+  }
+}
+.card__dosage {
+  font-family: "A-OTFJunPro34", sans-serif;
+  font-size: 1rem;
+  position: absolute;
+  top: 10px;
+  right: 2px;
+}
+@media screen and (max-width: 600px) {
+  .card__dosage {
+    font-size: 1.7vw;
+    top: 1.7vw;
+    right: 0.3vw;
+  }
+}
+.card__text-content {
+  margin-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  .card__text-content {
+    margin-left: 3.3vw;
+  }
 }
 
 .review {
-  background: url(/assets/image/review_bg.svg);
+  background: url(../image/review_bg.svg);
   padding: 25px 0;
 }
 @media screen and (max-width: 600px) {
@@ -704,7 +876,7 @@ a {
 
 .ailments {
   width: 100%;
-  background: url(/assets/image/ailments_bg.svg) no-repeat;
+  background: url(../image/ailments_bg.svg) no-repeat;
   padding: 15px 0;
   background-size: cover;
   background-position: bottom left;
@@ -780,7 +952,7 @@ a {
   justify-content: center;
   width: 100%;
   height: 55px;
-  background: url(/assets/image/red_bg.svg);
+  background: url(../image/red_bg.svg);
   background-size: 100%;
 }
 @media screen and (max-width: 600px) {
@@ -800,7 +972,7 @@ a {
 }
 
 .faq {
-  background: url(/assets/image/top_flowers.svg) repeat no-repeat, url(/assets/image/bottom_left.svg) no-repeat, url(/assets/image/bottom_right.svg) no-repeat;
+  background: url(../image/top_flowers.svg) repeat no-repeat, url(../image/bottom_left.svg) no-repeat, url(../image/bottom_right.svg) no-repeat;
   background-position: top -15px left, bottom left -10px, bottom right -10px;
   background-size: auto, 145px, 145px;
   padding: 20px 25px 30px;
@@ -813,7 +985,7 @@ a {
 }
 .faq__item {
   padding: 15px 25px 22px;
-  background-image: url(/assets/image/dot.svg);
+  background-image: url(../image/dot.svg);
   background-position: bottom -5px center;
   background-repeat: repeat-x;
 }
@@ -840,7 +1012,7 @@ a {
 }
 
 .products {
-  background: url(/assets/image/top_flowers.svg) repeat no-repeat, url(/assets/image/bottom_left.svg) no-repeat, url(/assets/image/bottom_right.svg) no-repeat;
+  background: url(../image/top_flowers.svg) repeat no-repeat, url(../image/bottom_left.svg) no-repeat, url(../image/bottom_right.svg) no-repeat;
   background-position: top -15px left, bottom left -10px, bottom right -10px;
   background-size: auto, 145px, 145px;
   padding: 25px 0;
@@ -856,7 +1028,7 @@ a {
   padding: 20px 20px 20px 50px;
   max-width: 455px;
   margin-top: 25px;
-  background-image: url(/assets/image/pink_bg_light.svg);
+  background-image: url(../image/pink_bg_light.svg);
 }
 @media screen and (max-width: 600px) {
   .products__item {
@@ -866,7 +1038,7 @@ a {
   }
 }
 .products__item--dark-pink {
-  background-image: url(/assets/image/pink_bg.svg);
+  background-image: url(../image/pink_bg.svg);
 }
 .products__item--right {
   margin: 25px 0 0 auto;
@@ -886,7 +1058,7 @@ a {
   text-align: center;
   width: 50px;
   height: 50px;
-  background: url(/assets/image/point-bg.svg) no-repeat;
+  background: url(../image/point-bg.svg) no-repeat;
   background-size: contain;
   display: flex;
   align-items: center;
@@ -957,7 +1129,7 @@ a {
 }
 
 .sns {
-  background-image: url(/assets/image/pink_bg_light.svg);
+  background-image: url(../image/pink_bg_light.svg);
   text-align: center;
   padding: 30px 0 40px;
   overflow: hidden;
@@ -1007,7 +1179,7 @@ a {
 }
 
 .pr {
-  background: url(/assets/image/review_bg.svg);
+  background: url(../image/review_bg.svg);
   padding: 25px 0;
 }
 @media screen and (max-width: 600px) {
@@ -1062,7 +1234,7 @@ a {
 }
 
 .video {
-  background: url(/assets/image/top_flowers.svg) repeat no-repeat, url(/assets/image/bottom_left.svg) no-repeat, url(/assets/image/bottom_right.svg) no-repeat;
+  background: url(../image/top_flowers.svg) repeat no-repeat, url(../image/bottom_left.svg) no-repeat, url(../image/bottom_right.svg) no-repeat;
   background-position: top -15px left, bottom left -10px, bottom right -10px;
   background-size: auto, 145px, 145px;
   padding: 25px 0;
@@ -1091,21 +1263,363 @@ a {
   max-width: 600px;
   margin: 0 auto;
 }
+@media screen and (max-width: 600px) {
+  .product-cards__wrapper {
+    padding: 5vw 6.6vw;
+  }
+}
+.product-cards__text {
+  padding: 0 35px;
+  margin-bottom: 30px;
+  font-size: 1rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-align: justify;
+}
+@media screen and (max-width: 600px) {
+  .product-cards__text {
+    padding: 0 5.8vw;
+    margin-bottom: 5vw;
+  }
+}
 
 .button {
   appearance: none;
   border: 0;
   width: 100%;
   height: 55px;
-  background: transparent url(/assets/image/button.svg) no-repeat;
+  background: transparent url(../image/button-bg.svg) no-repeat;
   background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.button--lg {
-  font-size: 0;
-  background-image: url(/assets/image/button-lg.svg);
+@media screen and (max-width: 600px) {
+  .button {
+    height: 9.2vw;
+  }
 }
 .button--mt-8 {
   margin-top: 8px;
+}
+@media screen and (max-width: 600px) {
+  .button--mt-8 {
+    margin-top: 1.3vw;
+  }
+}
+.button__text {
+  font-size: 1.9rem;
+  color: #fff;
+  -webkit-text-stroke: 1px #34ab8f;
+  font-family: "KozGoPR6NBold", sans-serif;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 600px) {
+  .button__text {
+    font-size: 3.1vw;
+    margin-bottom: 0.8vw;
+  }
+}
+
+.board {
+  position: relative;
+}
+.board__text-container {
+  background: url(../image/board.svg) no-repeat;
+  background-size: contain;
+  min-width: 105px;
+  height: 145px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20% 20% 18% 15%;
+  margin-top: 40px;
+}
+@media screen and (max-width: 600px) {
+  .board__text-container {
+    min-width: 17.5vw;
+    height: 24.2vw;
+    margin-top: 6.7vw;
+  }
+}
+.board__text-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.board__orange-rule {
+  width: 55px;
+  height: 6px;
+  background-color: #fea621;
+  margin: 2px auto;
+}
+@media screen and (max-width: 600px) {
+  .board__orange-rule {
+    width: 9vw;
+    height: 1vw;
+  }
+}
+.board__text {
+  font-size: 1rem;
+  font-family: "KozGoPR6NRegular", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .board__text {
+    font-size: 1.7vw;
+  }
+}
+.board__text--sm {
+  font-size: 0.6rem;
+}
+@media screen and (max-width: 600px) {
+  .board__text--sm {
+    font-size: 1vw;
+  }
+}
+.board__circle-image {
+  position: absolute;
+  top: -35px;
+  left: 9%;
+  width: 49px;
+  height: 49px;
+}
+@media screen and (max-width: 600px) {
+  .board__circle-image {
+    top: -5.8vw;
+    width: 8.1vw;
+    height: 8.1vw;
+  }
+}
+.board--lg .board__text-container {
+  min-width: 170px;
+  height: 230px;
+  padding: 25% 20% 22% 15%;
+  margin-top: 10px;
+}
+@media screen and (max-width: 600px) {
+  .board--lg .board__text-container {
+    min-width: 28.3vw;
+    height: 38.3vw;
+    margin-top: 1.7vw;
+  }
+}
+.board--lg .board__orange-rule {
+  width: 90px;
+}
+@media screen and (max-width: 600px) {
+  .board--lg .board__orange-rule {
+    width: 15vw;
+  }
+}
+.board--lg .board__text {
+  font-size: 1.7rem;
+}
+@media screen and (max-width: 600px) {
+  .board--lg .board__text {
+    font-size: 2.8vw;
+  }
+}
+.board--lg .board__text--sm {
+  font-size: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .board--lg .board__text--sm {
+    font-size: 1.7vw;
+  }
+}
+
+.banner__wrapper {
+  width: 100%;
+  min-height: 460px;
+  height: calc(100vh - 90px);
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .banner__wrapper {
+    min-height: 76.6vw;
+    height: 76.6vw;
+  }
+}
+.banner__background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+@media screen and (max-width: 600px) {
+  .banner__background-img {
+    display: none;
+  }
+}
+.banner__background-img--sp {
+  display: none;
+  object-fit: initial;
+}
+@media screen and (max-width: 600px) {
+  .banner__background-img--sp {
+    display: block;
+  }
+}
+.banner__content {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: right;
+  padding: 20px;
+  max-width: 800px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 1366px) {
+  .banner__content {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 600px) {
+  .banner__content {
+    padding: 3.3vw;
+    display: block;
+  }
+}
+.banner__title {
+  font-family: "KozGoPr6N-Heavy", sans-serif;
+  color: #fff;
+  font-style: italic;
+  font-size: 3.3rem;
+  text-shadow: 2px 2px 5px #000;
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 600px) {
+  .banner__title {
+    font-size: 5.5vw;
+    text-shadow: 0.3vw 0.3vw 0.8vw #000;
+    margin-bottom: 3.3vw;
+  }
+}
+.banner__title span {
+  font-size: 5.3rem;
+}
+@media screen and (max-width: 600px) {
+  .banner__title span {
+    font-size: 8.8vw;
+  }
+}
+.banner__title p {
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+}
+@media screen and (max-width: 600px) {
+  .banner__title p {
+    font-size: 7.5vw;
+    line-height: 7.5vw;
+  }
+}
+.banner__logo-wrapper {
+  height: 21px;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 600px) {
+  .banner__logo-wrapper {
+    height: 3.5vw;
+    margin-bottom: 2.5vw;
+  }
+}
+.banner__logo-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.banner__logo-wrapper span {
+  color: #fff;
+  font-size: 2.1rem;
+  line-height: 2.1rem;
+  font-weight: normal;
+}
+@media screen and (max-width: 600px) {
+  .banner__logo-wrapper span {
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+  }
+}
+.banner__text {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: 1.1rem;
+  line-height: 1.8em;
+  max-width: 800px;
+  padding: 0 60px;
+  margin: 0 auto;
+  text-align: justify;
+}
+@media screen and (max-width: 600px) {
+  .banner__text {
+    font-size: 2vw;
+    padding: 0 10vw;
+  }
+}
+.banner__text-img {
+  position: absolute;
+  top: -65%;
+  left: -9%;
+  width: 250px;
+}
+@media screen and (max-width: 600px) {
+  .banner__text-img {
+    width: 41.6vw;
+  }
+}
+
+.ingredients {
+  position: relative;
+}
+.ingredients__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+@media screen and (max-width: 600px) {
+  .ingredients__list {
+    grid-gap: 1.7vw;
+  }
+}
+.ingredients__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background-color: #ffff01;
+}
+@media screen and (max-width: 600px) {
+  .ingredients__item {
+    width: 10.8vw;
+    height: 10.8vw;
+  }
+}
+.ingredients__text {
+  font-size: 1.2rem;
+  font-family: "KozGoPR6NBold", sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .ingredients__text {
+    font-size: 2vw;
+  }
 }
 
 .max-width {
@@ -1145,4 +1659,21 @@ a {
 
 .red {
   color: #ff0001;
+}
+
+.mt-35 {
+  margin-top: 35px;
+}
+@media screen and (max-width: 600px) {
+  .mt-35 {
+    margin-top: 5.8vw;
+  }
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }

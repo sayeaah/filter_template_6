@@ -1,5 +1,5 @@
 .products {
-  background: url(/assets/image/top_flowers.svg) repeat no-repeat, url(/assets/image/bottom_left.svg) no-repeat, url(/assets/image/bottom_right.svg) no-repeat;
+  background: url(../image/top_flowers.svg) repeat no-repeat, url(../image/bottom_left.svg) no-repeat, url(../image/bottom_right.svg) no-repeat;
   background-position: top -15px left, bottom left -10px, bottom right -10px;
   background-size: auto, 145px, 145px;
   padding: 25px 0;
@@ -14,7 +14,7 @@
     padding: 20px 20px 20px 50px;
     max-width: 455px;
     margin-top: 25px;
-    background-image: url(/assets/image/pink_bg_light.svg);
+    background-image: url(../image/pink_bg_light.svg);
 
     @media screen and (max-width: 600px) {
       padding: 3.3vw 3.3vw 3.3vw 8.3vw;
@@ -23,7 +23,7 @@
     }
 
     &--dark-pink {
-      background-image: url(/assets/image/pink_bg.svg);
+      background-image: url(../image/pink_bg.svg);
     }
   
     &--right {
@@ -45,7 +45,7 @@
     text-align: center;
     width: 50px;
     height: 50px;
-    background: url(/assets/image/point-bg.svg) no-repeat;
+    background: url(../image/point-bg.svg) no-repeat;
     background-size: contain;
     display: flex;
     align-items: center;

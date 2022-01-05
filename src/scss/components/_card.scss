@@ -4,8 +4,64 @@
   box-shadow: 6px 6px 10px rgba($color: #4d4d4d, $alpha: 0.65);
   overflow: hidden;
 
+  @media screen and (max-width: 600px) {
+    border-radius: 3.8vw;
+    box-shadow: 1vw 1vw 1.6vw rgba($color: #4d4d4d, $alpha: 0.65);
+  }
+
   &--with-title {
     border-radius: 0 23px 0 23px;
+
+    @media screen and (max-width: 600px) {
+      border-radius: 0 3.8vw 0 3.8vw;
+    }
+
+    .card__product-name {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      font-family: $jun501;
+
+      @media screen and (max-width: 600px) {
+        font-size: 4vw;
+        line-height: 5.8vw;
+      }
+    }
+
+    .card__price {
+      font-size: 3.5rem;
+      line-height: 4rem;
+
+      @media screen and (max-width: 600px) {
+        font-size: 5.8vw;
+        line-height: 6.6vw;
+      }
+
+      &--lg {
+        font-size: 3.9rem;
+
+        @media screen and (max-width: 600px) {
+          font-size: 6.5vw;
+        }
+      }
+    }
+
+    .card__yen {
+      font-size: 2.6rem;
+      line-height: 2.6rem;
+  
+      @media screen and (max-width: 600px) {
+        font-size: 4.3vw;
+        line-height: 4.3vw;
+      }
+    }
+
+    .card__text-content {
+      margin-left: 10px;
+
+      @media screen and (max-width: 600px) {
+        margin-left: 1.7vw;
+      }
+    }
   }
 
   &__title {
@@ -14,34 +70,80 @@
     justify-content: center;
     width: 100%;
     height: 52px;
-    background: url(/assets/image/red_bg.svg);
+    background: url(../image/red_bg.svg);
     color: $white;
     font-family: $kg-heavy;
     font-size: 2.5rem;
+
+    @media screen and (max-width: 600px) {
+      height: 8.7vw;
+      font-size: 4.2vw;
+    }
   }
 
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 15px 15px;
+    padding: 5px 15px 15px 0;
+
+    @media screen and (max-width: 600px) {
+      padding: 0.8vw 2.5vw 2.5vw 0;
+    }
+
+    &--with-padding-left {
+      padding-left: 15px;
+
+      @media screen and (max-width: 600px) {
+        padding-left: 2.5vw;
+      }
+
+      .board__circle-image {
+        left: 0;
+      }
+
+      .card__dosage {
+        right: 8px;
+
+        @media screen and (max-width: 600px) {
+          right: 1.3vw;
+        }
+      }
+    }
   }
 
   &__image-content {
     min-width: 125px;
     width: 125px;
+    position: relative;
+
+    @media screen and (max-width: 600px) {
+      min-width: 20.8vw;
+      width: 20.8vw;
+    }
   }
 
   &__product-name {
-    font-size: 2.4rem;
-    line-height: 3.5rem;
-    font-family: $jun501;
+    white-space: nowrap;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    font-family: $jun34;
+
+    @media screen and (max-width: 600px) {
+      font-size: 3.6vw;
+      line-height: 5vw;
+    }
   }
 
   &__product-description {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: $jun34;
-    margin-bottom: 4px;
+    margin: 4px 0;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.9vw;
+      margin: 0.7vw 0;
+    }
   }
 
   &__free-shipping {
@@ -53,10 +155,16 @@
     font-weight: bold;
     white-space: nowrap;
     background-color: #ff0001;
-    font-size: 2.2rem;
-    padding: 0 20px;
+    font-size: 2.5rem;
+    padding: 5px 20px;
     border-radius: 50%;
-    margin-left: 20px;
+    margin-left: 10px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 4.2vw;
+      padding: 0.5vw 3.3vw;
+      margin-left: 1.7vw;
+    }
   }
 
   &__regular-price {
@@ -65,13 +173,33 @@
     line-height: 1.4em;
     margin-right: 5px;
     white-space: nowrap;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2.5vw;
+      margin-right: 0.8vw;
+    }
   }
 
   &__price {
-    font-size: 3.5rem;
-    line-height: 4rem;
+    font-size: 4.4rem;
+    line-height: 4.5rem;
     font-family: $kg-bold;
     white-space: nowrap;
+
+    @media screen and (max-width: 600px) {
+      font-size: 7.3vw;
+      line-height: 7.5vw;
+    }
+
+    &--lg {
+      font-size: 4.6rem;
+      margin-left: 5px;
+
+      @media screen and (max-width: 600px) {
+        font-size: 7.7vw;
+        margin-left: 0.8vw;
+      }
+    }
   }
 
   &__tax-label {
@@ -79,11 +207,43 @@
     font-size: 0.8rem;
     line-height: 0.9rem;
     font-family: $kg-bold;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.3vw;
+      line-height: 1.5vw;
+    }
   }
 
   &__yen {
-    font-size: 2.6rem;
-    line-height: 2.6rem;
+    font-size: 3rem;
+    line-height: 3rem;
     font-family: $kg-bold;
+
+    @media screen and (max-width: 600px) {
+      font-size: 5vw;
+      line-height: 5vw;
+    }
+  }
+
+  &__dosage {
+    font-family: $jun34;
+    font-size: 1rem;
+    position: absolute;
+    top: 10px;
+    right: 2px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.7vw;
+      top: 1.7vw;
+      right: 0.3vw;
+    }
+  }
+
+  &__text-content {
+    margin-left: 20px;
+
+    @media screen and (max-width: 600px) {
+      margin-left: 3.3vw;
+    }
   }
 }

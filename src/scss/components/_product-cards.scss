@@ -3,5 +3,25 @@
     padding: 30px 40px;
     max-width: 600px;
     margin: 0 auto;
+
+    @media screen and (max-width: 600px) {
+      padding: 5vw 6.6vw;
+    }
+  }
+
+  &__text {
+    padding: 0 35px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: justify;
+
+    @media screen and (max-width: 600px) {
+      padding: 0 5.8vw;
+      margin-bottom: 5vw;
+    }
   }
 }

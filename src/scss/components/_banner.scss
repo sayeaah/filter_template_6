@@ -1,0 +1,150 @@
+.banner {
+  &__wrapper {
+    width: 100%;
+    min-height: 460px;
+    height: calc(100vh - 90px);
+    position: relative;
+
+    @media screen and (max-width: 600px) {
+      min-height: 76.6vw;
+      height: 76.6vw;
+    }
+  }
+
+  &__background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+
+    @media screen and (max-width: 600px) {
+      display: none;
+    }
+
+    &--sp {
+      display: none;
+      object-fit: initial;
+
+      @media screen and (max-width: 600px) {
+        display: block;
+      }
+    }
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: right;
+    padding: 20px;
+    max-width: 800px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (max-width: 1366px) {
+      justify-content: space-evenly;
+    }
+
+    @media screen and (max-width: 600px) {
+      padding: 3.3vw;
+      display: block;
+    }
+  }
+
+  &__title {
+    font-family: $kg-heavy;
+    color: $white;
+    font-style: italic;
+    font-size: 3.3rem;
+    text-shadow: 2px 2px 5px $black;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 600px) {
+      font-size: 5.5vw;
+      text-shadow: 0.3vw 0.3vw 0.8vw $black;
+      margin-bottom: 3.3vw;
+    }
+
+    span {
+      font-size: 5.3rem;
+
+      @media screen and (max-width: 600px) {
+        font-size: 8.8vw;
+      }
+    }
+
+    p {
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+
+      @media screen and (max-width: 600px) {
+        font-size: 7.5vw;
+        line-height: 7.5vw;
+      }
+    }
+  }
+
+  &__logo-wrapper {
+    height: 21px;
+    margin-bottom: 15px;
+
+    @media screen and (max-width: 600px) {
+      height: 3.5vw;
+      margin-bottom: 2.5vw;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    span {
+      color: $white;
+      font-size: 2.1rem;
+      line-height: 2.1rem;
+      font-weight: normal;
+
+      @media screen and (max-width: 600px) {
+        font-size: 3.5vw;
+        line-height: 3.5vw;
+      }
+    }
+  }
+
+  &__text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: 1.1rem;
+    line-height: 1.8em;
+    max-width: 800px;
+    padding: 0 60px;
+    margin: 0 auto;
+    text-align: justify;
+
+    @media screen and (max-width: 600px) {
+      font-size: 2vw;
+      padding: 0 10vw;
+    }
+  }
+
+  &__text-img {
+    position: absolute;
+    top: -65%;
+    left: -9%;
+    width: 250px;
+
+    @media screen and (max-width: 600px) {
+      width: 41.6vw;
+    }
+  }
+}

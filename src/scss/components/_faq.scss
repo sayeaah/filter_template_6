@@ -1,5 +1,5 @@
 .faq {
-  background: url(/assets/image/top_flowers.svg) repeat no-repeat, url(/assets/image/bottom_left.svg) no-repeat, url(/assets/image/bottom_right.svg) no-repeat;
+  background: url(../image/top_flowers.svg) repeat no-repeat, url(../image/bottom_left.svg) no-repeat, url(../image/bottom_right.svg) no-repeat;
   background-position: top -15px left, bottom left -10px, bottom right -10px;
   background-size: auto, 145px, 145px;
   padding: 20px 25px 30px;
@@ -11,7 +11,7 @@
 
   &__item {
     padding: 15px 25px 22px;
-    background-image: url(/assets/image/dot.svg);
+    background-image: url(../image/dot.svg);
     background-position: bottom -5px center;
     background-repeat: repeat-x;
 

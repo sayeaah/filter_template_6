@@ -1,0 +1,113 @@
+.board {
+  position: relative;
+
+  &__text-container {
+    background: url(../image/board.svg) no-repeat;
+    background-size: contain;
+    min-width: 105px;
+    height: 145px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20% 20% 18% 15%;
+    margin-top: 40px;
+
+    @media screen and (max-width: 600px) {
+      min-width: 17.5vw;
+      height: 24.2vw;
+      margin-top: 6.7vw;
+    }
+  }
+
+  &__text-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__orange-rule {
+    width: 55px;
+    height: 6px;
+    background-color: #fea621;
+    margin: 2px auto;
+
+    @media screen and (max-width: 600px) {
+      width: 9vw;
+      height: 1vw;
+    }
+  }
+
+  &__text {
+    font-size: 1rem;
+    font-family: $kg-regular;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.7vw;
+    }
+
+    &--sm {
+      font-size: 0.6rem;
+
+      @media screen and (max-width: 600px) {
+        font-size: 1vw;
+      }
+    }
+  }
+
+  &__circle-image {
+    position: absolute;
+    top: -35px;
+    left: 9%;
+    width: 49px;
+    height: 49px;
+
+    @media screen and (max-width: 600px) {
+      top: -5.8vw;
+      width: 8.1vw;
+      height: 8.1vw;
+    }
+  }
+
+  &--lg {
+    .board__text-container {
+      min-width: 170px;
+      height: 230px;
+      padding: 25% 20% 22% 15%;
+      margin-top: 10px;
+
+      @media screen and (max-width: 600px) {
+        min-width: 28.3vw;
+        height: 38.3vw;
+        margin-top: 1.7vw;
+      }
+    }
+
+    .board__orange-rule {
+      width: 90px;
+
+      @media screen and (max-width: 600px) {
+        width: 15vw;
+      }
+    }
+
+    .board__text {
+      font-size: 1.7rem;
+
+      @media screen and (max-width: 600px) {
+        font-size: 2.8vw;
+      }
+
+      &--sm {
+        font-size: 1rem;
+
+        @media screen and (max-width: 600px) {
+          font-size: 1.7vw;
+        }
+      }
+    }
+  }
+}

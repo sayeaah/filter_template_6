@@ -36,3 +36,19 @@
 .red {
   color: #ff0001;
 }
+
+.mt-35 {
+  margin-top: 35px;
+
+  @media screen and (max-width: 600px) {
+    margin-top: 5.8vw;
+  }
+}
+
+.align-baseline {
+  align-items: baseline;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
