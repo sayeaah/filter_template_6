@@ -62,10 +62,10 @@
   }
 
   &__text {
-    font-weight: bold;
+    font-weight: 400;
     font-size: $font-20;
     margin-top: 15px;
-    font-family: $ryumin;
+    font-family: $kosugi;
 
     @media screen and (max-width: 600px) {
       font-size: 3.3vw;

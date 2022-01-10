@@ -1,16 +1,20 @@
 mixin item(image)
   li.sns__item&attributes(attributes)= name
-    img(src= image alt="sns image")
+    img.sns__frame(src= image alt="sns frame")
+    .sns__content
+      .sns__image-wrapper 
+        img(src="" alt="sns img" onerror="this.style.display='none'")
+      p.sns__hash # タイトルが入ります
 
 section.sns
   .max-width
-    .heading.ryumin
-      h2.heading__text.heading__text--sm SNSでも
+    .heading
+      h2.heading__text.heading__text--xsm SNSでも
         br
-        | 「esfマルチビタミン」が話題！
+        span.js-curved-heading 「esfマルチビタミン」が話題！
     ul.sns__list
-      +item("assets/image/insta_frame.svg")
-      +item("assets/image/insta_frame.svg")(class="sns__item--reverse")
-      +item("assets/image/insta_frame.svg")
-      +item("assets/image/insta_frame.svg")(class="sns__item--reverse")
-      +item("assets/image/insta_frame.svg")
+      +item("assets/image/sns_frame.svg")
+      +item("assets/image/sns_frame.svg")(class="sns__item--reverse")
+      +item("assets/image/sns_frame.svg")
+      +item("assets/image/sns_frame.svg")(class="sns__item--reverse")
+      +item("assets/image/sns_frame.svg")

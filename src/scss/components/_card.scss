@@ -19,7 +19,6 @@
     .card__product-name {
       font-size: 2.5rem;
       line-height: 3.5rem;
-      font-family: $jun501;
 
       @media screen and (max-width: 600px) {
         font-size: 4vw;
@@ -72,7 +71,7 @@
     height: 52px;
     background: url(../image/red_bg.svg);
     color: $white;
-    font-family: $kg-heavy;
+    font-family: $mochi;
     font-size: 2.5rem;
 
     @media screen and (max-width: 600px) {
@@ -127,7 +126,8 @@
     white-space: nowrap;
     font-size: 2.2rem;
     line-height: 3rem;
-    font-family: $jun34;
+    font-family: $m-plus;
+    font-weight: bold;
 
     @media screen and (max-width: 600px) {
       font-size: 3.6vw;
@@ -137,7 +137,8 @@
 
   &__product-description {
     font-size: 1.2rem;
-    font-family: $jun34;
+    font-family: $m-plus;
+    font-weight: bold;
     margin: 4px 0;
 
     @media screen and (max-width: 600px) {
@@ -151,7 +152,7 @@
     align-items: center;
     justify-content: center;
     color: $white;
-    font-family: $kg-bold;
+    font-family: $m-plus;
     font-weight: bold;
     white-space: nowrap;
     background-color: #ff0001;
@@ -168,7 +169,8 @@
   }
 
   &__regular-price {
-    font-family: $kg-bold;
+    font-family: $m-plus;
+    font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.4em;
     margin-right: 5px;
@@ -183,7 +185,8 @@
   &__price {
     font-size: 4.4rem;
     line-height: 4.5rem;
-    font-family: $kg-bold;
+    font-family: $m-plus;
+    font-weight: bold;
     white-space: nowrap;
 
     @media screen and (max-width: 600px) {
@@ -206,7 +209,8 @@
     white-space: nowrap;
     font-size: 0.8rem;
     line-height: 0.9rem;
-    font-family: $kg-bold;
+    font-family: $m-plus;
+    font-weight: bold;
 
     @media screen and (max-width: 600px) {
       font-size: 1.3vw;
@@ -217,7 +221,8 @@
   &__yen {
     font-size: 3rem;
     line-height: 3rem;
-    font-family: $kg-bold;
+    font-family: $m-plus;
+    font-weight: bold;
 
     @media screen and (max-width: 600px) {
       font-size: 5vw;
@@ -226,7 +231,7 @@
   }
 
   &__dosage {
-    font-family: $jun34;
+    font-family: $kosugi;
     font-size: 1rem;
     position: absolute;
     top: 10px;

@@ -120,6 +120,7 @@
   }
 
   &__text {
+    font-family: $kosugi;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -132,19 +133,8 @@
     text-align: justify;
 
     @media screen and (max-width: 600px) {
-      font-size: 2vw;
+      font-size: 1.8vw;
       padding: 0 10vw;
-    }
-  }
-
-  &__text-img {
-    position: absolute;
-    top: -65%;
-    left: -9%;
-    width: 250px;
-
-    @media screen and (max-width: 600px) {
-      width: 41.6vw;
     }
   }
 }

@@ -51,7 +51,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 12px;
-    color: $black;
+    flex-direction: column;
 
     @media screen and (max-width: 600px) {
       top: -1.7vw;
@@ -62,12 +62,19 @@
       font-size: 3vw;
       line-height: 2.2vw;
     }
+
+    span {
+      display: block;
+      text-align: center;
+      font-family: $zen;
+      line-height: 0.6em;
+    }
   }
 
   &__title {
     padding: 0 0 15px 55px;
     font-size: 1.3rem;
-    font-family: $ryumin;
+    font-family: $m-plus;
 
     @media screen and (max-width: 600px) {
       padding: 0 0 2.5vw 9.2vw;
@@ -82,6 +89,7 @@
   }
 
   &__description {
+    font-family: $kosugi;
     text-align: justify;
     overflow: hidden;
     display: -webkit-box;

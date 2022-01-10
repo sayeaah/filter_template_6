@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>FILTERPH</title>
+    <!-- fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&amp;display=swap" rel="stylesheet">
   </head>
   <body> 
     <header class="header max-width">
@@ -30,7 +37,11 @@
                 </div>
               </div>
               <div class="banner__ingredients-container">
-                <div class="ingredients"><img class="banner__text-img" src="assets/image/banner-text.png" alt="banner text">
+                <div class="ingredients">
+                  <div class="ingredients__title-wrapper">
+                    <p class="ingredients__title ingredients__title--outline">カラダが喜ぶ成分が<br><span> <img src="assets/image/line-left.svg">ギュッ!<img src="assets/image/line-right.svg"></span>と配合</p>
+                    <p class="ingredients__title">カラダが喜ぶ成分が<br><span> <img src="assets/image/line-left.svg">ギュッ!<img src="assets/image/line-right.svg"></span>と配合</p>
+                  </div>
                   <ul class="ingredients__list">
                     <li class="ingredients__item"><span class="ingredients__text">ビタミン○</span></li>
                     <li class="ingredients__item"><span class="ingredients__text">ビタミン○</span></li>
@@ -108,7 +119,7 @@
       <section class="ailments">
         <div class="max-width">
           <div class="heading ryumin"> 
-            <h2 class="heading__text">こんなお悩み抱えていませんか？</h2>
+            <h2 class="heading__text heading__text--sm js-curved-heading">こんなお悩み抱えていませんか？</h2>
           </div>
           <ul class="ailments__list">
             <li class="ailments__item">
@@ -132,39 +143,46 @@
       <section class="products">
         <div class="max-width">
           <div class="heading ryumin">
-            <h2 class="heading__text heading__text--sm">こんなに違います！<br>願いを叶えるefsマルチビタミン。</h2>
+            <h2 class="heading__text heading__text--xsm">こんなに違います！
+              <p class="js-curved-heading">願いを叶えるefsマルチビタミン。</p>
+            </h2>
           </div>
           <ul class="products__list">
-                  <li class="products__item"><span class="products__point">Point<br>1</span>
-                    <h3 class="products__title ryumin">見出しが入ります。見出しが入ります◯◯◯◯◯。</h3>
+                  <li class="products__item">
+                    <p class="products__point">Point<span>1</span></p>
+                    <h3 class="products__title">見出しが入ります。見出しが入ります◯◯◯◯◯。</h3>
                     <div class="products__description-wrapper">
                       <p class="products__description">これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。</p>
                       <div class="products__image-wrapper"></div>
                     </div>
                   </li>
-                  <li class="products__item products__item--dark-pink products__item--right"><span class="products__point">Point<br>1</span>
-                    <h3 class="products__title ryumin">見出しが入ります。見出しが入ります◯◯◯◯◯。</h3>
+                  <li class="products__item products__item--dark-pink products__item--right">
+                    <p class="products__point">Point<span>2</span></p>
+                    <h3 class="products__title">見出しが入ります。見出しが入ります◯◯◯◯◯。</h3>
                     <div class="products__description-wrapper">
                       <p class="products__description">これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。</p>
                       <div class="products__image-wrapper"></div>
                     </div>
                   </li>
-                  <li class="products__item"><span class="products__point">Point<br>1</span>
-                    <h3 class="products__title ryumin">見出しが入ります。見出しが入ります◯◯◯◯◯。</h3>
+                  <li class="products__item">
+                    <p class="products__point">Point<span>3</span></p>
+                    <h3 class="products__title">見出しが入ります。見出しが入ります◯◯◯◯◯。</h3>
                     <div class="products__description-wrapper">
                       <p class="products__description">これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。</p>
                       <div class="products__image-wrapper"></div>
                     </div>
                   </li>
-                  <li class="products__item products__item--dark-pink products__item--right"><span class="products__point">Point<br>1</span>
-                    <h3 class="products__title ryumin">見出しが入ります。見出しが入ります◯◯◯◯◯。</h3>
+                  <li class="products__item products__item--dark-pink products__item--right">
+                    <p class="products__point">Point<span>4</span></p>
+                    <h3 class="products__title">見出しが入ります。見出しが入ります◯◯◯◯◯。</h3>
                     <div class="products__description-wrapper">
                       <p class="products__description">これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。</p>
                       <div class="products__image-wrapper"></div>
                     </div>
                   </li>
-                  <li class="products__item"><span class="products__point">Point<br>1</span>
-                    <h3 class="products__title ryumin">見出しが入ります。見出しが入ります◯◯◯◯◯。</h3>
+                  <li class="products__item">
+                    <p class="products__point">Point<span>5</span></p>
+                    <h3 class="products__title">見出しが入ります。見出しが入ります◯◯◯◯◯。</h3>
                     <div class="products__description-wrapper">
                       <p class="products__description">これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。これはコピーです◯◯◯◯◯◯◯。</p>
                       <div class="products__image-wrapper"></div>
@@ -235,7 +253,7 @@
       <section class="review">
         <div class="max-width">
           <div class="heading ryumin"> 
-            <h2 class="heading__text">お客様の声</h2>
+            <h2 class="heading__text js-curved-heading">お客様の声</h2>
           </div>
           <ul class="review__list">
                   <li class="review__item">
@@ -274,7 +292,7 @@
       <section class="video">
         <div class="max-width">
           <div class="heading">
-            <h2 class="heading__text">動画でご紹介タイトル</h2>
+            <h2 class="heading__text js-curved-heading">動画でご紹介タイトル</h2>
           </div>
           <div class="video__wrapper">
             <p class="video__text">自信を持っておすすめします。<br>まずはお試しください！</p>
@@ -284,22 +302,47 @@
       </section>
       <section class="sns">
         <div class="max-width">
-          <div class="heading ryumin">
-            <h2 class="heading__text heading__text--sm">SNSでも<br>「esfマルチビタミン」が話題！</h2>
+          <div class="heading">
+            <h2 class="heading__text heading__text--xsm">SNSでも<br><span class="js-curved-heading">「esfマルチビタミン」が話題！</span></h2>
           </div>
           <ul class="sns__list">
-                  <li class="sns__item"><img src="assets/image/insta_frame.svg" alt="sns image"></li>
-                  <li class="sns__item sns__item--reverse"><img src="assets/image/insta_frame.svg" alt="sns image"></li>
-                  <li class="sns__item"><img src="assets/image/insta_frame.svg" alt="sns image"></li>
-                  <li class="sns__item sns__item--reverse"><img src="assets/image/insta_frame.svg" alt="sns image"></li>
-                  <li class="sns__item"><img src="assets/image/insta_frame.svg" alt="sns image"></li>
+                  <li class="sns__item"><img class="sns__frame" src="assets/image/sns_frame.svg" alt="sns frame">
+                    <div class="sns__content">
+                      <div class="sns__image-wrapper"> <img src="" alt="sns img" onerror="this.style.display='none'"></div>
+                      <p class="sns__hash"># タイトルが入ります</p>
+                    </div>
+                  </li>
+                  <li class="sns__item sns__item--reverse"><img class="sns__frame" src="assets/image/sns_frame.svg" alt="sns frame">
+                    <div class="sns__content">
+                      <div class="sns__image-wrapper"> <img src="" alt="sns img" onerror="this.style.display='none'"></div>
+                      <p class="sns__hash"># タイトルが入ります</p>
+                    </div>
+                  </li>
+                  <li class="sns__item"><img class="sns__frame" src="assets/image/sns_frame.svg" alt="sns frame">
+                    <div class="sns__content">
+                      <div class="sns__image-wrapper"> <img src="" alt="sns img" onerror="this.style.display='none'"></div>
+                      <p class="sns__hash"># タイトルが入ります</p>
+                    </div>
+                  </li>
+                  <li class="sns__item sns__item--reverse"><img class="sns__frame" src="assets/image/sns_frame.svg" alt="sns frame">
+                    <div class="sns__content">
+                      <div class="sns__image-wrapper"> <img src="" alt="sns img" onerror="this.style.display='none'"></div>
+                      <p class="sns__hash"># タイトルが入ります</p>
+                    </div>
+                  </li>
+                  <li class="sns__item"><img class="sns__frame" src="assets/image/sns_frame.svg" alt="sns frame">
+                    <div class="sns__content">
+                      <div class="sns__image-wrapper"> <img src="" alt="sns img" onerror="this.style.display='none'"></div>
+                      <p class="sns__hash"># タイトルが入ります</p>
+                    </div>
+                  </li>
           </ul>
         </div>
       </section>
       <section class="faq">
         <div class="max-width">
-          <div class="heading ryumin"> 
-            <h2 class="heading__text">よくあるご質問</h2>
+          <div class="heading">
+            <h2 class="heading__text js-curved-heading">よくあるご質問</h2>
           </div>
           <ul class="faq__list">
             <li class="faq__item">
@@ -328,7 +371,7 @@
       <section class="pr">
         <div class="max-width">
           <div class="heading">
-            <h2 class="heading__text">会社PR欄</h2>
+            <h2 class="heading__text js-curved-heading">会社PR欄</h2>
           </div>
           <div class="pr__wrapper">
             <div class="pr__image-wrapper"><img src="" alt="" onerror="this.style.display='none'"></div>
@@ -399,5 +442,7 @@
     <footer class="footer">
       <p class="footer__copyright">efs corporation</p>
     </footer>
+    <script src="assets/js/circletype.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

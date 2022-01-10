@@ -19,7 +19,22 @@
               span.board__text.board__text--sm □□□□□
         .banner__ingredients-container
           .ingredients
-            img.banner__text-img(src="assets/image/banner-text.png", alt="banner text")
+            .ingredients__title-wrapper
+              p.ingredients__title.ingredients__title--outline カラダが喜ぶ成分が
+                br
+                span 
+                  img(src="assets/image/line-left.svg") 
+                  | ギュッ!
+                  img(src="assets/image/line-right.svg") 
+                | と配合
+              p.ingredients__title カラダが喜ぶ成分が
+                br
+                span 
+                  img(src="assets/image/line-left.svg") 
+                  | ギュッ!
+                  img(src="assets/image/line-right.svg") 
+                | と配合
+
             ul.ingredients__list
               each n in [1, 2, 3, 4, 5, 6]
                 li.ingredients__item

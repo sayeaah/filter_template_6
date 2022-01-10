@@ -28,10 +28,67 @@
 
   &__text {
     font-size: 1.2rem;
-    font-family: $kg-bold;
+    font-family: $m-plus;
 
     @media screen and (max-width: 600px) {
       font-size: 2vw;
+    }
+  }
+
+  &__title-wrapper {
+    position: relative;
+    height: 50px;
+
+    @media screen and (max-width: 600px) {
+      height: 8.3vw;
+    }
+  }
+
+  &__title {
+    font-family: $zen;
+    font-weight: 900;
+    color: #145629;
+    font-size: 2.2rem;
+    text-align: center;
+    line-height: 1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @media screen and (max-width: 600px) {
+      font-size: 3.6vw;
+    }
+
+    span {
+      font-size: 2.6rem;
+
+      @media screen and (max-width: 600px) {
+        font-size: 4.3vw;
+      }
+
+      img {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 23px;
+        height: 41px;
+
+        @media screen and (max-width: 600px) {
+          width: 3.8vw;
+          height: 6.8vw;
+        }
+      }
+    }
+
+    &--outline {
+      font-family: $m-plus;
+      -webkit-text-stroke: 8px $white;
+      color: $white;
+      text-shadow: 3px 2px 8px $black;
+
+      @media screen and (max-width: 600px) {
+        -webkit-text-stroke: 1.3vw $white;
+        text-shadow: 0.5vw 0.3vw 1.3vw $black;
+      }
     }
   }
 }

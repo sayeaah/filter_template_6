@@ -14,18 +14,6 @@
   font-family: "KozGoPr6N-Heavy";
   src: url("../fonts/KozGoPr6N-Heavy.otf");
 }
-@font-face {
-  font-family: "A-OTFJunPro501";
-  src: url("../fonts/A-OTFJunPro501.otf");
-}
-@font-face {
-  font-family: "A-OTFRyuminProH-KL";
-  src: url("../fonts/A-OTFRyuminProH-KL.otf");
-}
-@font-face {
-  font-family: "A-OTFJunPro34";
-  src: url("../fonts/A-OTFJunPro34.otf");
-}
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS and IE text size adjust after device orientation change,
@@ -431,6 +419,7 @@ th {
 html {
   height: 100%;
   font-size: 10px;
+  color: #1a1818;
 }
 
 ul,
@@ -459,24 +448,37 @@ a {
 }
 .heading__text {
   margin-top: -38px;
-  font-size: 2.4rem;
-  font-family: "A-OTFRyuminProH-KL", serif;
+  font-size: 3.5rem;
+  font-family: "Zen Old Mincho", serif;
   font-weight: 900;
 }
 @media screen and (max-width: 600px) {
   .heading__text {
     margin-top: -6.3vw;
-    font-size: 4vw;
+    font-size: 5.8vw;
   }
 }
 .heading__text--sm {
-  margin-top: -45px;
-  font-size: 2rem;
+  margin-top: -30px;
+  font-size: 2.8rem;
+  letter-spacing: -1px;
 }
 @media screen and (max-width: 600px) {
   .heading__text--sm {
-    margin-top: -7.5vw;
+    margin-top: -5vw;
+    font-size: 4.6vw;
+  }
+}
+.heading__text--xsm {
+  margin-top: -35px;
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+@media screen and (max-width: 600px) {
+  .heading__text--xsm {
+    margin-top: -5.8vw;
     font-size: 3.3vw;
+    line-height: 4vw;
   }
 }
 
@@ -529,7 +531,6 @@ a {
 .card--with-title .card__product-name {
   font-size: 2.5rem;
   line-height: 3.5rem;
-  font-family: "A-OTFJunPro501", cursive, sans-serif;
 }
 @media screen and (max-width: 600px) {
   .card--with-title .card__product-name {
@@ -581,7 +582,7 @@ a {
   height: 52px;
   background: url(../image/red_bg.svg);
   color: #fff;
-  font-family: "KozGoPr6N-Heavy", sans-serif;
+  font-family: "Mochiy Pop P One", sans-serif;
   font-size: 2.5rem;
 }
 @media screen and (max-width: 600px) {
@@ -635,7 +636,8 @@ a {
   white-space: nowrap;
   font-size: 2.2rem;
   line-height: 3rem;
-  font-family: "A-OTFJunPro34", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
 }
 @media screen and (max-width: 600px) {
   .card__product-name {
@@ -645,7 +647,8 @@ a {
 }
 .card__product-description {
   font-size: 1.2rem;
-  font-family: "A-OTFJunPro34", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
   margin: 4px 0;
 }
 @media screen and (max-width: 600px) {
@@ -659,7 +662,7 @@ a {
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-family: "KozGoPR6NBold", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   font-weight: bold;
   white-space: nowrap;
   background-color: #ff0001;
@@ -676,7 +679,8 @@ a {
   }
 }
 .card__regular-price {
-  font-family: "KozGoPR6NBold", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.4em;
   margin-right: 5px;
@@ -691,7 +695,8 @@ a {
 .card__price {
   font-size: 4.4rem;
   line-height: 4.5rem;
-  font-family: "KozGoPR6NBold", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
   white-space: nowrap;
 }
 @media screen and (max-width: 600px) {
@@ -714,7 +719,8 @@ a {
   white-space: nowrap;
   font-size: 0.8rem;
   line-height: 0.9rem;
-  font-family: "KozGoPR6NBold", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
 }
 @media screen and (max-width: 600px) {
   .card__tax-label {
@@ -725,7 +731,8 @@ a {
 .card__yen {
   font-size: 3rem;
   line-height: 3rem;
-  font-family: "KozGoPR6NBold", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
 }
 @media screen and (max-width: 600px) {
   .card__yen {
@@ -734,7 +741,7 @@ a {
   }
 }
 .card__dosage {
-  font-family: "A-OTFJunPro34", sans-serif;
+  font-family: "Kosugi Maru", sans-serif;
   font-size: 1rem;
   position: absolute;
   top: 10px;
@@ -849,7 +856,7 @@ a {
   font-size: 1.8rem;
   font-weight: 900;
   margin: 0 20px 0 15px;
-  font-family: "A-OTFRyuminProH-KL", serif;
+  font-family: "Zen Old Mincho", serif;
 }
 @media screen and (max-width: 600px) {
   .review__text {
@@ -934,10 +941,10 @@ a {
   }
 }
 .ailments__text {
-  font-weight: bold;
+  font-weight: 400;
   font-size: 2rem;
   margin-top: 15px;
-  font-family: "A-OTFRyuminProH-KL", serif;
+  font-family: "Kosugi Maru", sans-serif;
 }
 @media screen and (max-width: 600px) {
   .ailments__text {
@@ -1000,14 +1007,23 @@ a {
 .faq__title {
   text-align: center;
   color: #f6437f;
-  font-size: 1.6rem;
-  font-family: "KozGoPR6NBold", sans-serif;
+  font-size: 1.8rem;
+  font-family: "M PLUS Rounded 1c", sans-serif;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 600px) {
   .faq__title {
     font-size: 3vw;
     margin-bottom: 1.7vw;
+  }
+}
+.faq__text {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 600px) {
+  .faq__text {
+    font-size: 1.7vw;
   }
 }
 
@@ -1064,7 +1080,7 @@ a {
   align-items: center;
   justify-content: center;
   padding-top: 12px;
-  color: #000;
+  flex-direction: column;
 }
 @media screen and (max-width: 600px) {
   .products__point {
@@ -1077,10 +1093,16 @@ a {
     line-height: 2.2vw;
   }
 }
+.products__point span {
+  display: block;
+  text-align: center;
+  font-family: "Zen Old Mincho", serif;
+  line-height: 0.6em;
+}
 .products__title {
   padding: 0 0 15px 55px;
   font-size: 1.3rem;
-  font-family: "A-OTFRyuminProH-KL", serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 @media screen and (max-width: 600px) {
   .products__title {
@@ -1094,6 +1116,7 @@ a {
   justify-content: space-between;
 }
 .products__description {
+  font-family: "Kosugi Maru", sans-serif;
   text-align: justify;
   overflow: hidden;
   display: -webkit-box;
@@ -1143,6 +1166,7 @@ a {
   padding-left: 3%;
 }
 .sns__item {
+  position: relative;
   width: 50%;
   transform: rotate(-5deg);
   text-align: right;
@@ -1163,18 +1187,75 @@ a {
     margin: -19.3vw 2.5vw 0 auto;
   }
 }
+.sns__item--reverse .sns__content {
+  right: initial;
+  left: 5px;
+}
+@media screen and (max-width: 600px) {
+  .sns__item--reverse .sns__content {
+    left: 0.8vw;
+  }
+}
 .sns__item:first-child {
   margin-top: 0;
 }
-.sns__item img {
+.sns__frame {
   width: 100%;
   max-width: 245px;
   height: auto;
   object-fit: contain;
 }
 @media screen and (max-width: 600px) {
-  .sns__item img {
+  .sns__frame {
     max-width: 40.8vw;
+  }
+}
+.sns__content {
+  position: absolute;
+  max-width: 229px;
+  width: 100%;
+  top: 0;
+  left: initial;
+  right: 12px;
+  padding: 15px;
+  text-align: left;
+}
+@media screen and (max-width: 600px) {
+  .sns__content {
+    max-width: 38.1vw;
+    right: 2vw;
+    padding: 2.5vw;
+  }
+}
+.sns__image-wrapper {
+  box-shadow: 0 0 2px #1a1818;
+  height: 170px;
+  /* antialiasing */
+  outline: 1px solid transparent;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+  will-change: transform;
+  -webkit-perspective: 1000;
+}
+@media screen and (max-width: 600px) {
+  .sns__image-wrapper {
+    height: 28.3vw;
+  }
+}
+.sns__image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sns__hash {
+  font-family: "Kosugi Maru", sans-serif;
+  font-size: 1.4rem;
+  padding-top: 7px;
+}
+@media screen and (max-width: 600px) {
+  .sns__hash {
+    font-size: 2.3vw;
+    padding-top: 1.2vw;
   }
 }
 
@@ -1219,6 +1300,7 @@ a {
   object-fit: cover;
 }
 .pr__text {
+  font-family: "Kosugi Maru", sans-serif;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 13;
@@ -1248,7 +1330,7 @@ a {
 .video__text {
   color: #af0252;
   font-size: 2rem;
-  font-family: "A-OTFRyuminProH-KL", serif;
+  font-family: "Zen Old Mincho", serif;
   text-align: center;
   font-weight: bold;
 }
@@ -1269,6 +1351,7 @@ a {
   }
 }
 .product-cards__text {
+  font-family: "Kosugi Maru", sans-serif;
   padding: 0 35px;
   margin-bottom: 30px;
   font-size: 1rem;
@@ -1277,6 +1360,7 @@ a {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-align: justify;
+  color: #1a1818;
 }
 @media screen and (max-width: 600px) {
   .product-cards__text {
@@ -1312,7 +1396,8 @@ a {
 .button__text {
   font-size: 1.9rem;
   color: #fff;
-  -webkit-text-stroke: 1px #34ab8f;
+  -webkit-text-stroke: 1px #00a99d;
+  text-shadow: 0 2px 2px #00a99d;
   font-family: "KozGoPR6NBold", sans-serif;
   margin-bottom: 5px;
 }
@@ -1555,6 +1640,7 @@ a {
   }
 }
 .banner__text {
+  font-family: "Kosugi Maru", sans-serif;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -1568,19 +1654,8 @@ a {
 }
 @media screen and (max-width: 600px) {
   .banner__text {
-    font-size: 2vw;
+    font-size: 1.8vw;
     padding: 0 10vw;
-  }
-}
-.banner__text-img {
-  position: absolute;
-  top: -65%;
-  left: -9%;
-  width: 250px;
-}
-@media screen and (max-width: 600px) {
-  .banner__text-img {
-    width: 41.6vw;
   }
 }
 
@@ -1614,11 +1689,68 @@ a {
 }
 .ingredients__text {
   font-size: 1.2rem;
-  font-family: "KozGoPR6NBold", sans-serif;
+  font-family: "M PLUS Rounded 1c", sans-serif;
 }
 @media screen and (max-width: 600px) {
   .ingredients__text {
     font-size: 2vw;
+  }
+}
+.ingredients__title-wrapper {
+  position: relative;
+  height: 50px;
+}
+@media screen and (max-width: 600px) {
+  .ingredients__title-wrapper {
+    height: 8.3vw;
+  }
+}
+.ingredients__title {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 900;
+  color: #145629;
+  font-size: 2.2rem;
+  text-align: center;
+  line-height: 1em;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+@media screen and (max-width: 600px) {
+  .ingredients__title {
+    font-size: 3.6vw;
+  }
+}
+.ingredients__title span {
+  font-size: 2.6rem;
+}
+@media screen and (max-width: 600px) {
+  .ingredients__title span {
+    font-size: 4.3vw;
+  }
+}
+.ingredients__title span img {
+  display: inline-block;
+  vertical-align: bottom;
+  width: 23px;
+  height: 41px;
+}
+@media screen and (max-width: 600px) {
+  .ingredients__title span img {
+    width: 3.8vw;
+    height: 6.8vw;
+  }
+}
+.ingredients__title--outline {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  -webkit-text-stroke: 8px #fff;
+  color: #fff;
+  text-shadow: 3px 2px 8px #000;
+}
+@media screen and (max-width: 600px) {
+  .ingredients__title--outline {
+    -webkit-text-stroke: 1.3vw #fff;
+    text-shadow: 0.5vw 0.3vw 1.3vw #000;
   }
 }
 

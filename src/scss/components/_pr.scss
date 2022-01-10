@@ -39,6 +39,7 @@
   }
 
   &__text {
+    font-family: $kosugi;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 13;
